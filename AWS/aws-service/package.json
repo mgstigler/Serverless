@@ -1,0 +1,13 @@
+{
+  "name": "aws-nodejs",
+  "version": "1.0.0",
+  "description": "AWS Lambda sample for the Serverless framework",
+  "main": "handler.js",
+  "keywords": [
+    "aws",
+    "serverless"
+  ],
+  "devDependencies": {
+    "serverless-aws-lambda": "*"
+  }
+}
