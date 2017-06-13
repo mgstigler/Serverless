@@ -7,7 +7,15 @@
     "aws",
     "serverless"
   ],
+  "dependencies": {
+    "aws-sdk": "^2.34.0"
+  },
   "devDependencies": {
-    "serverless-aws-lambda": "*"
+    "@types/aws-lambda": "0.0.9",
+    "@types/aws-sdk": "0.0.42",
+    "@types/node": "^7.0.12",
+    "aws-sdk-typescript": "0.0.3",
+    "typescript": "2.1.6",
+    "typings": "^1.3.3"
   }
 }

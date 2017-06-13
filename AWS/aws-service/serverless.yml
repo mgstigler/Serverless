@@ -20,6 +20,14 @@ service: aws-service
 provider:
   name: aws
   runtime: nodejs6.10
+  environment:
+    TABLE_NAME: "Recipes"
+
+
+package:
+  individually: true
+  exclude:
+    - ./**
 
 # you can overwrite defaults here
 #  stage: dev
@@ -57,6 +65,9 @@ provider:
 functions:
   hello:
     handler: handler.hello
+
+  getRecipes:
+    handler: HTTPTrigger/GetRecipes/handler.GetRecipes
 
 #    The following are a few example events you can configure
 #    NOTE: Please make sure to change your handler code to work with those events
