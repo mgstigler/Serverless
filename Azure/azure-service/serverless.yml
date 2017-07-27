@@ -34,12 +34,14 @@ plugins:
 #    - exclude-me-dir/**
 
 functions:
-  hello: 
-    handler: handler.hello
+  httpTrigger: 
+    handler: HTTPTrigger/API.index.SendText
     events: 
       - http: true
         x-azure-settings:
           authLevel : anonymous
+    include:
+      - HTTPTrigger/API/*
 
 # The following are a few examples of other events you can configure:
 #

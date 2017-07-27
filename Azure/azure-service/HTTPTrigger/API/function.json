@@ -1,0 +1,27 @@
+{
+  "bindings": [
+    {
+      "authLevel": "function",
+      "type": "httpTrigger",
+      "direction": "in",
+      "name": "req",
+      "route": "orders/",
+      "methods": [
+        "post"
+      ]
+    },
+    {
+      "type": "http",
+      "direction": "out",
+      "name": "res"
+    },
+    {
+      "type": "twilioSms",
+      "name": "$return",
+      "accountSid": "TwilioAccountSid",
+      "authToken": "TwilioAuthToken",
+      "direction": "out"
+    }
+  ],
+  "disabled": false
+}
