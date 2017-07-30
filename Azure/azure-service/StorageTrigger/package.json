@@ -1,0 +1,13 @@
+{
+  "name": "azure-nodejs",
+  "version": "1.0.0",
+  "description": "Azure Functions for Storage Trigger",
+  "main": "handler.js",
+  "keywords": [
+    "azure",
+    "serverless"
+  ],
+  "dependencies": {
+    "request":"^2.81.0"
+  }
+}
