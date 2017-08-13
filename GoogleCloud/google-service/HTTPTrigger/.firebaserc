@@ -1,0 +1,6 @@
+{
+  "projects": {
+    "staging": "http-project-6da2a",
+    "default": "http-project-6da2a"
+  }
+}

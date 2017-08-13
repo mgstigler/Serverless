@@ -1,0 +1,11 @@
+{
+  "hosting": {
+    "public": "functions",
+    "rewrites": [
+      {
+        "source": "/alerts",
+        "function": "alerts"
+      }
+    ]
+  }
+}
