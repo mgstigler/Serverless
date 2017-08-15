@@ -1,0 +1,10 @@
+{
+  "name": "cloud-agnostic",
+  "version": "0.0.0",
+  "description": "CloudAgnostic",
+  "main": "app.js",
+  "author": {
+    "name": "mstigler"
+  },
+  "dependencies": {}
+}

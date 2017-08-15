@@ -1,0 +1,11 @@
+{
+  "name": "storage",
+  "version": "0.0.0",
+  "description": "Azure storage module.",
+  "main": "storage.js",
+  "author": {
+    "name": "batkinson"
+  },
+  "license": "(MIT OR Apache-2.0)",
+  "repository": "na/na"
+}
