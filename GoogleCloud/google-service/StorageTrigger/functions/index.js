@@ -15,35 +15,23 @@ exports.handler = (event) => {
 };
 
 
-// module.exports = function (context, req) {
-//     console.log(req.body.name);
-//     if(req.body.name && req.body.phoneNumber){
-//         client.messages.create({
-//             from: '+18178544390',
-//             to: req.body.phoneNumber,
-//             body: "Hello " + req.body.name + "! Your order of " + req.body.order + " is on the way."
-//         }, function(err, message) {
-//             if(err) {
-//                 console.error(err.message);
-//             }
-//         });
-//     }
+module.exports = function (context, req) {
+    console.log(req.body.name);
+    if(req.body.name && req.body.phoneNumber){
+        client.messages.create({
+            from: '+18178544390',
+            to: req.body.phoneNumber,
+            body: "Hello " + req.body.name + "! Your order of " + req.body.order + " is on the way."
+        }, function(err, message) {
+            if(err) {
+                console.error(err.message);
+            }
+        });
+    }
 
-//     else {
-//         console.error("Please include a request body with a name and a phone number");
-//     }
-// };
+    else {
+        console.error("Please include a request body with a name and a phone number");
+    }
+};
 
 
-// // [END makeUppercaseTrigger]
-//       // [START makeUppercaseBody]
-//       // Grab the current value of what was written to the Realtime Database.
-//       const original = event.data.val();
-//       console.log('Uppercasing', event.params.pushId, original);
-//       const uppercase = original.toUpperCase();
-//       // You must return a Promise when performing asynchronous tasks inside a Functions such as
-//       // writing to the Firebase Realtime Database.
-//       // Setting an "uppercase" sibling in the Realtime Database returns a Promise.
-//       return event.data.ref.parent.child('uppercase').set(uppercase);
-//       // [END makeUppercaseBody]
-//     });
